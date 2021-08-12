@@ -12,8 +12,8 @@ dockerpath=malak3ysa/capstoneformalak
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login 
-docker image tag capstoneformalak $dockerpath
+docker image tag capstoneformalak $dockerpath:1.0
 
 # Step 3:
 # Push image to a docker repository
-docker image push $dockerpath
+docker image push $dockerpath:1.0
